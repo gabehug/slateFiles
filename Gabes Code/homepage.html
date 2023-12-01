@@ -1,0 +1,478 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- START META TAGS <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="title" content="Graduate and Professional Admission Loyola Chicago" /><meta name="description" content="Put meaning and purpose in your life and work. Explore graduate and professional programs at Loyola University Chicago." /><meta property="og:url" content="https://gpem.luc.edu/portal/admission?tab=home" /><meta property="og:type" content="website" /><meta property="og:title" content="Graduate and Professional Admission Loyola Chicago" /><meta property="og:description" content="Put meaning and purpose in your life and work. Explore graduate and professional programs at Loyola University Chicago." /><meta property="og:image" content="https://gpem.luc.edu/www/images/GPEM_Website/GPEM_meta_image.png" /><meta property="og:image:alt" content="Graduate &amp; Professional Admission Loyola University Chicago" /><meta property="og:locale" content="en_US" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:site" content="@LoyolaChicago" /><meta name="twitter:title" content="Loyola University Chicago" /><meta name="twitter:description" content="We are Chicago's Jesuit Catholic University. We are guided by a simple promise: to prepare people to lead extraordinary lives." /><meta name="twitter:image" content="https://www.luc.edu/media/lucedu/styleassets/images/loyolauniversitychicago-062019.jpg" /><meta name="twitter:image:alt" content="Loyola University Chicago" /> END META TAGS -->
+		<title></title>
+		<!-- Loyola css -->
+		<style type="text/css">
+			.home-jumbotron {
+				position: absolute;
+				top: 150px;
+				z-index: 1;
+				display: block;
+				overflow: hidden;
+			}
+			.video {
+				width: 100;
+				height: auto;
+				object-fit: cover;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+			.video-wrapper {
+				/* Telling our absolute positioned video to 
+  be relative to this element */
+				position: relative;
+
+				width: 100vw;
+				height: auto;
+
+				padding-bottom: 0rem !important;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.spacer {
+				width: 100vw;
+				height: 24rem;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			document.title = "Graduate & Professional Admission";
+		</script>
+		<main class="homepage front-page">
+			<!--Component: Home Jumbotron -->
+			<div class="video-wrapper">
+				<video autoplay="" loop="" muted="muted" playsinline="playsinline">
+					<source src="/website/assets/video.mp4" type="video/mp4" />
+				</video>
+			</div>
+
+			<div class="gr12-container-fluid home-jumbotron">
+				<div class="find-program-dropdown hide">
+					<div class="find-program-dropdown--container">
+						<div
+							aria-expanded="false"
+							class="toggle"
+							id="findProgramDropdown"
+							type="button"
+						>
+							Find Your Program
+						</div>
+					</div>
+
+					<form action="/" class="luc-form" method="get">
+						<div class="gr-cntrl">
+							<div class="gr-cntrl-item gr-cntrl-item-1">
+								<select class="select-css" id="dlNav" name="degree-level">
+									<option>Degree Level</option>
+									{% for item in dl %}
+									<option value="{{item.guidDL}}">{{item.valueDL}}</option>
+									{% endfor %}
+								</select>
+							</div>
+
+							<div class="gr-cntrl-item gr-cntrl-item-2">
+								<select class="select-css" id="dmNav" name="delivery-mode">
+									<option>Delivery Mode</option>
+									{% for dropdown in dm %}
+									<option value="{{dropdown.guidDM}}">
+										{{dropdown.valueDM}}
+									</option>
+									{% endfor %}
+								</select>
+							</div>
+
+							<div class="gr-cntrl-item gr-cntrl-item-3">
+								<button
+									class="btn btn-sm mb-block default mt-3"
+									id="lookupNav"
+									onclick="finderNav()"
+								>
+									SUBMIT
+								</button>
+								<script>
+									function finderNav() {
+										var dm = $("#dmNav").find("option:selected").val();
+										var dl = $("#dlNav").find("option:selected").val();
+										window.open(
+											"https://gpem.luc.edu/portal/program-finder?dm=" +
+												dm +
+												"&dl=" +
+												dl
+										);
+										window.close();
+									}
+								</script>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="gr12-container home-jumbo-container">
+					<div class="gr12-row">
+						<div class="gr12-col-md-12 main-search">
+							<!-- Search Criteria begin -->
+							<div class="search-criteria not-dropdown">
+								<div class="top reset-links">
+									<div class="gr12-row">
+										<div
+											class="gr12-col-md-5 gr12-col-lg-5 search-criteria-col"
+										>
+											<div class="find-program-title">FIND YOUR PROGRAM</div>
+										</div>
+
+										<div class="gr12-col-md-7 gr12-col-lg-7 btn-wrap">
+											<a href="/portal/program-finder/"
+												><span class="btn btn-cta d-inline m-0 pe-0"
+													>VIEW ALL PROGRAMS</span
+												></a
+											>
+										</div>
+									</div>
+
+									<form action="/" class="luc-form" method="get">
+										<div class="gr-cntrl">
+											<div class="gr-cntrl-item gr-cntrl-item-1">
+												<select
+													class="select-css"
+													id="dlMain"
+													name="degree-level"
+												>
+													<option>Degree Level</option>
+													{% for item in dl %}
+													<option value="{{item.guidDL}}">
+														{{item.valueDL}}
+													</option>
+													{% endfor %}
+												</select>
+											</div>
+
+											<div class="gr-cntrl-item gr-cntrl-item-2">
+												<select
+													class="select-css"
+													id="dmMain"
+													name="delivery-mode"
+												>
+													<option>Delivery Mode</option>
+													{% for dropdown in dm %}
+													<option value="{{dropdown.guidDM}}">
+														{{dropdown.valueDM}}
+													</option>
+													{% endfor %}
+												</select>
+											</div>
+
+											<div class="gr-cntrl-item gr-cntrl-item-3">
+												<button
+													class="btn d-block mt-3 mx-0 default"
+													onclick="filterMain()"
+												>
+													SUBMIT
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<div class="bottom">
+									<div class="gr12-row">
+										<div class="gr12-col-12">
+											<div class="h3 no-title-mobile">SEARCH</div>
+										</div>
+									</div>
+
+									<div class="gr12-row">
+										<!--Component: Search Component -->
+										<div class="search-component">
+											<input
+												aria-labelledby="searchLabel"
+												class="search"
+												id="S"
+												name="s"
+												placeholder="Search for your program"
+												type="text"
+											/><button
+												aria-label="Search Now"
+												class="search-btn"
+												name="submit"
+												onclick="filterMain()"
+												type="submit"
+												value=""
+											>
+												<i class="fa-solid fa-magnifying-glass"></i>
+											</button>
+											<script>
+												function filterMain() {
+													var input = $("input.search").val();
+													var dm = $("#dmMain").find("option:selected").val();
+													var dl = $("#dlMain").find("option:selected").val();
+													window.open(
+														"https://gpem.luc.edu/portal/program-finder?search=" +
+															input +
+															"&dm=" +
+															dm +
+															"&dl=" +
+															dl
+													);
+													window.close();
+												}
+											</script>
+										</div>
+										<!--Component End: Search Component -->
+									</div>
+
+									<div class="gr12-row btn-wrap bottom-btns">
+										<a href="/portal/program-finder/"
+											><span class="btn btn-cta d-block m-0 pe-0"
+												>VIEW ALL PROGRAMS</span
+											></a
+										>
+									</div>
+								</div>
+							</div>
+							<!-- end of search criteria -->
+						</div>
+					</div>
+				</div>
+
+				<div class="gr12-container get-started">
+					<h2 class="jumbo-title">GET STARTED</h2>
+
+					<div class="gr12-row jumbo-card-wrap">
+						<div class="gr12-col-sm-12 gr12-col-md-4 gray-on-dark-wrap">
+							<!--Component: Gray on Dark Card --><a
+								class="card-link"
+								href="admission?tab=admission-process"
+								><span class="card card-gray-on-dark"
+									><span class="img"
+										><img
+											alt="Graduation cap icon"
+											src="https://gpem.luc.edu/www/images/GPEM_Website/home/cap.svg" /></span
+									><span class="title">Admission Process</span
+									><span class="btn btn-cta m-0 p-0">HOW TO APPLY</span></span
+								></a
+							><!--Component End: Gray on Dark Card -->
+						</div>
+
+						<div class="gr12-col-sm-12 gr12-col-md-4 gray-on-dark-wrap">
+							<!--Component: Gray on Dark Card --><a
+								class="card-link"
+								href="admission?tab=cost-financialaid"
+								><span class="card card-gray-on-dark"
+									><span class="img"
+										><img
+											alt="Piggy bank icon"
+											src="https://gpem.luc.edu/www/images/GPEM_Website/home/piggy-bank.svg" /></span
+									><span class="title">Cost &amp; Financial Aid</span
+									><span class="btn btn-cta m-0 p-0"
+										>TUITION &amp; FEES</span
+									></span
+								></a
+							><!--Component End: Gray on Dark Card -->
+						</div>
+
+						<div class="gr12-col-sm-12 gr12-col-md-4 gray-on-dark-wrap">
+							<!--Component: Gray on Dark Card --><a
+								class="card-link"
+								href="admission?tab=visit-loyola"
+								><span class="card card-gray-on-dark"
+									><span class="img"
+										><img
+											alt="Chicago skyline icon"
+											src="https://gpem.luc.edu/www/images/GPEM_Website/home/icon.svg" /></span
+									><span class="title">Explore Chicago</span
+									><span class="btn btn-cta m-0 p-0">VISIT LOYOLA</span></span
+								></a
+							><!--Component End: Gray on Dark Card -->
+						</div>
+					</div>
+				</div>
+
+				<div class="bg"></div>
+
+				<div class="mobile-top-img"></div>
+			</div>
+			<!-- END DIV RIGHT BEFORE ___ Component End: Home Jumbotron -->
+
+			<div class="spacer"></div>
+
+			<div class="gr12-container-fluid">
+				<!--Component: Home First CTA -->
+				<div class="bg-white-to-dark">
+					<div
+						class="gr12-container-fluid cta cta-full-height tl-br-transparent"
+					>
+						<div class="gr12-row">
+							<div class="gr12-col-md-6 full-image-cover">
+								<img
+									alt="A Loyola student works on the gardens outside the School of Environmental Sustainability"
+									src="https://gpem.luc.edu/www/images/GPEM_Website/home/ses_backdrop.jpg"
+								/>
+							</div>
+
+							<div
+								class="gr12-col-md-6 content-side bg-brick reverse-bg dark-bg"
+							>
+								<div class="cta-eyebrow">Become More. Do More.</div>
+
+								<div class="cta-title">WHAT CALLS YOU?</div>
+
+								<div class="description">
+									Professional achievement and higher purpose: a Loyola
+									education challenges you to excel in your career and
+									community. Our graduate programs emphasize ethical practice in
+									all professions and are infused with the values we share: to
+									promote social justice, sustainability, and equity. Through
+									research, mentorship, and hands-on service learning
+									opportunities, Loyola's dynamic curriculum equips you with
+									skills to succeed in your career and lead a life of integrity,
+									both personally and professionally.
+								</div>
+								<a class="btn-link-wrap" href="admission?tab=why-loyola"
+									><span class="btn btn-secondary mx-0">Why Loyola</span></a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Component: Home First CTA -->
+			</div>
+
+			<div class="gr12-container home-by-the-numbers">
+				<div class="gr12-row">
+					<div class="gr12-col-md-12">
+						<!-- Non-component: By the Numbers -->
+						<h2 class="center fs-42 by-the-numbers-title">By The Numbers</h2>
+
+						<div class="gr12-container-fluid">
+							<div class="by-the-numbers">
+								<!-- 1 item -->
+								<div class="action-point">
+									<div class="title">200+</div>
+
+									<div class="desc">
+										GRADUATE, PROFESSIONAL, AND CERTIFICATE PROGRAMS
+									</div>
+								</div>
+								<!-- 2 item -->
+
+								<div class="action-point">
+									<div class="title">18 Months</div>
+
+									<div class="desc">Average Time To Complete a Degree</div>
+								</div>
+								<!-- 3 item -->
+
+								<div class="action-point">
+									<div class="title">100+</div>
+
+									<div class="desc">FLEXIBLE ONLINE PROGRAMS</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Non-component: By the Numbers -->
+					</div>
+				</div>
+			</div>
+
+			<div class="gr12-container-fluid">
+				<!--Component: Full Height CTA -->
+				<div class="bg-brick-to-white">
+					<div
+						class="gr12-container-fluid cta cta-full-height tl-br-transparent"
+					>
+						<div class="gr12-row">
+							<div class="gr12-col-md-6 content-side reverse-bg dark-bg">
+								<div class="cta-eyebrow">
+									LEAD THE DIFFERENCE
+									<span class="fs-italic me-1">YOU</span> WANT TO MAKE
+								</div>
+
+								<div class="cta-title">DISCOVER YOUR PROGRAM</div>
+
+								<div class="description">
+									Use the customizable
+									<a href="program-finder">Program Finder</a> to connect what
+									you want to achieve with who you want to be. Explore our
+									<strong>200+ highly ranked programs</strong>, including
+									<strong>100+ online offerings</strong>. Search and filter by
+									<strong>degree type, delivery format, school,</strong> or
+									<strong>specific program</strong>. There is no application fee
+									for any of Loyola's graduate or professional programs. Answer
+									your calling at Loyola.
+								</div>
+								<a class="btn-link-wrap" href="program-finder"
+									><span class="btn btn-secondary mx-0"
+										>EXPLORE PROGRAMS</span
+									></a
+								>
+							</div>
+
+							<div class="gr12-col-md-6 full-image-cover">
+								<img
+									alt="A Loyola professor engages in class with his students"
+									src="https://gpem.luc.edu/www/images/GPEM_Website/home/classroom6.jpg"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Component End: Full Height CTA -->
+			</div>
+
+			<div class="gr12-container my-5">
+				<div class="gr12-row">
+					<div class="gr12-col-md-6">
+						<!--Component: Details Contact -->
+						<div class="contact-details">
+							<img
+								alt="Loyola Logo"
+								class="logo"
+								src="https://gpem.luc.edu/www/images/GPEM_Website/loyola-logo-dei-gloria.svg"
+							/>
+							<div class="title">Contact Us</div>
+
+							<div class="description links">
+								<p>
+									<strong>Text:</strong>&nbsp;<a href="tel:3128838849"
+										>312.883.8849</a
+									>
+								</p>
+
+								<p>
+									<strong>Call:</strong>&nbsp;<a href="tel:312.915.7900"
+										>312.915.7900</a
+									>
+								</p>
+
+								<p>
+									<strong>Email:</strong>&nbsp;<a href="mailto:gpem@luc.edu"
+										>gpem@luc.edu</a
+									>
+								</p>
+							</div>
+						</div>
+						<!--Component End: Details Contact -->
+					</div>
+
+					<div class="gr12-col-md-6 px-3">
+						{{form | snippet: "website_contactus"}}
+						<!--Component: Short Form 
+          <form class="luc-form" method="post">
+          <div class="form-title">
+            Contact Us
+          </div>
+          <label>I am a... <select class="select-css" name="i-am-a" placeholder="-select one-" required="*"><option selected="selected">-select one-</option><option value="value1">Option A</option><option value="value2">Option B</option><option value="value3">Option C</option><option value="value4">Option D</option><option value="value5">Option E</option><option value="value6">Option F</option></select></label><label>Subject <input name="subject" placeholder="" required="" type="text" /></label><label>Questions or Comments *<textarea aria-required="true" cols="30" id="short-form-comments" name="comments" required="" rows="5"></textarea></label><button class="form-example-submit" type="submit">Submit</button></form>
+          Component End: Short Form -->
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="/website/assets/js/main.js"></script>
+	</body>
+</html>
