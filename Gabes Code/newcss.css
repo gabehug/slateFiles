@@ -1,3 +1,84 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Antenna Cond Light";
+  src: url("/shared/fonts/antennacondlight/antenna-condensed-light.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Antenna Cond Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/shared/fonts/antennacondbold/antenna-condensed-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Antenna Cond Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/shared/fonts/antennacondblack/antenna-condensed-black.eot?") format("embedded-opentype"),url("/shared/fonts/antennacondblack/antenna-condensed-black.woff") format("woff"),url("/shared/fonts/antennacondblack/antenna-condensed-black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Antenna";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/shared/fonts/antennareg/476def8b-6379-4133-9503-ca290c126397-4.svg");
+  src: url("/shared/fonts/antennareg/476def8b-6379-4133-9503-ca290c126397-2.eot?") format("embedded-opentype"),url("/shared/fonts/antennareg/476def8b-6379-4133-9503-ca290c126397-3.woff") format("woff"),url("/shared/fonts/antennareg/476def8b-6379-4133-9503-ca290c126397-1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antenna Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/shared/fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-4.svg");
+  src: url("/shared/fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-2.eot?") format("embedded-opentype"),url("/shared/fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-3.woff") format("woff"),url("/shared/fonts/antennabold/692e9d98-a1c5-4d26-9831-b7f258241cdf-1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antenna Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/shared/fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-4.svg");
+  src: url("/shared/fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-2.eot?") format("embedded-opentype"),url("/shared/fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-3.woff") format("woff"),url("/shared/fonts/antennablack/6620971b-19a1-4157-9796-83671a1c7836-1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antenna Comp Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/shared/fonts/antennacompbold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot?") format("embedded-opentype"),url("/shared/fonts/antennacompbold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff") format("woff"),url("/shared/fonts/antennacompbold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Antenna Comp Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/shared/fonts/antennacompblack/antenna-compressed-black.eot?") format("embedded-opentype"),url("/shared/fonts/antennacompblack/antenna-compressed-black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url("/shared/fonts/osreg/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url("/shared/fonts/osbold/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "OpenSans Extra Bold";
+  src: url("/shared/fonts/osextrabold/OpenSans-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 .gr12-container,.gr12-container-fluid,.gr12-container-lg,.gr12-container-md,.gr12-container-sm,.gr12-container-xl,.gr12-container-xxl {
   margin-left: auto;
   margin-right: auto;
@@ -96,6 +177,8 @@
   text-decoration: none !important
 }
 
+
+
 .fa,
 .fa-brands,
 .fa-duotone,
@@ -120,12 +203,20 @@
 
 .fa-magnifying-glass:before,
 .fa-search:before {
-    content: "\f002"
+    content: "\f002";
 }
-
+ 
 :host,
 :root {
     --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"
+}
+
+@font-face {
+  font-display: block;
+  font-family: Font Awesome\ 6 Free;
+  font-style: normal;
+  font-weight: 900;
+  src: url(/shared/fonts/fa/fa-solid-900.woff2) format("woff2"), url(/shared/fonts/fa/fa-solid-900.ttf) format("truetype")
 }
 
 .fa-solid,
@@ -1447,7 +1538,7 @@ padding-top: 11px
 .vp-main-header .site-name {
   border-top: .0625rem dashed #222;
   color: #222 !important;
-  font-family: "Antenna Cond Bold", sans-serif;
+  font-family: "Antenna Cond Bold", sans-serif !important;
   font-size: 1rem;
   font-weight: 900;
   letter-spacing: 0;
@@ -2241,83 +2332,3 @@ input[type=text] {
   }
 }
 
-@charset "UTF-8";
-@font-face {
-  font-family: "Antenna Cond Light";
-  src: url("/shared/fonts/antenna_condensed_light/antenna-condensed-light.woff") format("woff");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Antenna Condensed Bold;
-  font-style: normal;
-  font-weight: 400;
-  src: url(../shared/fonts/antenna-condensed-bold/antenna-condensed-bold.woff) format("woff");
-}
-
-@font-face {
-  font-family: Antenna Condensed Black;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/shared/fonts/antenna_condensed_black/antenna-condensed-black.eot?) format("embedded-opentype"),url(/shared/fonts/antenna_condensed_black/antenna-condensed-black.woff) format("woff"),url(/shared/fonts/antenna_condensed_black/antenna-condensed-black.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: Antenna;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/shared/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-4.svg);
-  src: url(/shared/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-2.eot?) format("embedded-opentype"),url(/shared/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-3.woff) format("woff"),url(/shared/fonts/antenna_regular/476def8b-6379-4133-9503-ca290c126397-1.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: Antenna Bold;
-  font-style: normal;
-  font-weight: 700;
-  src: url(/shared/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-4.svg);
-  src: url(/shared/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-2.eot?) format("embedded-opentype"),url(/shared/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-3.woff) format("woff"),url(/shared/fonts/antenna_bold/692e9d98-a1c5-4d26-9831-b7f258241cdf-1.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: Antenna Black;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/shared/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-4.svg);
-  src: url(//shared/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-2.eot?) format("embedded-opentype"),url(/shared/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-3.woff) format("woff"),url(/shared/fonts/antenna_black/6620971b-19a1-4157-9796-83671a1c7836-1.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: Antenna Comp Bold;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/shared/fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-2.eot?) format("embedded-opentype"),url(/shared/fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-3.woff) format("woff"),url(/shared/fonts/antenna_comp_bold/ef5900d9-cbb9-4435-a9e8-bb47afc557c3-1.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: Antenna Comp Black;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/shared/fonts/antenna_comp_black/antenna-compressed-black.eot?) format("embedded-opentype"),url(/shared/fonts/antenna_comp_black/antenna-compressed-black.woff) format("woff");
-}
-
-@font-face {
-  font-family: "OpenSans Regular";
-  src: url("/shared/fonts/osreg/OpenSans-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "OpenSans Bold";
-  src: url("/shared/fonts/osbold/OpenSans-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "OpenSans Extra Bold";
-  src: url("/shared/fonts/osextrabold/OpenSans-ExtraBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
