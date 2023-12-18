@@ -1,7 +1,6 @@
 # Code Snippets and workspace for LUC Web Designer Position
 This is the repository that I am using to develop and store project code for my position at Loyola University Chicago. </br>
-*Projects will only make it here if they are code intensive.* </br>
-The structure of this repo **will change over time!**
+*Projects will only make it here if they are code intensive.* The structure of this repo **will change over time!**
 
 ---
 
