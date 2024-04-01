@@ -1723,10 +1723,10 @@ padding-top: 11px
 
 @media screen and (min-width:48.0625rem) {
   .vp-main-header .site-name {
-      border: none;
-      border-left: .0625rem dashed #222;
+      border: 0;
+      border-left: 0.0625rem dashed #222;
       font-size: 1.5rem;
-      max-width: 21.25rem;
+      max-width: unset;
       padding: 0 0 0 1.25rem;
       width: auto
   }
@@ -1853,6 +1853,14 @@ padding-top: 11px
   top: 0;
 }
 
+@media screen and (min-width:48.0625rem) {
+  .vp-main-nav.fixed-top .site-name {
+      border-left: none!important;
+      max-width: unset;
+      padding-left: 0!important;
+  }
+}
+
 
 .vp-main-header .main-menu-wrap {
   align-items: center;
@@ -1957,6 +1965,13 @@ padding-top: 11px
 
 .vp-main-header .vp-navbar-brand-link {
   display: block 
+}
+
+@media screen and (min-width: 48.0625rem) {
+  .vp-main-header .vp-main-nav.fixed-top .vp-navbar-brand-link {
+      display: none;
+      margin-left: 0;
+  }
 }
 
 .vp-main-header .no-box-shadow {
