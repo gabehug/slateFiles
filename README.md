@@ -13,6 +13,18 @@ I am currently working to consolidate 7 different CSS sheets that are styling th
 - Reduce amount of code sent to website 
 - Send as few CSS sheets as possible to the site
 
+## 2. HTML 
+
+The HTML folder holds a rough HTML outline of the main GPEM homepage
+
+## 3. FAQ Creation
+
+This is the code for the new FAQ section being added to the GPEM Website with Frequently Asked Questions for students.
+
+## 4. EOP Consolidation 
+
+Code for the consolidation of Enrollment Advisor appointment portals to the main GPEM Appointment Portals. 
+
 ---
 
-***The HTML folder holds a rough outline of the main GPEM homepage***
+**Further updates to this code base are coming in the future as new projects are started**
