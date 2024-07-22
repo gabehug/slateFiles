@@ -3378,6 +3378,8 @@ footer p,footer span,footer#footer-fixed p,footer#footer-fixed span {
   cursor:default
 }
 
+
+
 button {
   background: rgba(0,0,0,.1);
   border: 1px solid var(--primary-color);
@@ -3396,6 +3398,8 @@ button {
   transition: .3s;
   width: 100%;
 }
+
+/* ! ------------------------------------ LUC FORM ------------------------------------ */
 
 form.luc-form {
   background: #eee;
@@ -3476,6 +3480,8 @@ form.luc-form form button {
   font-family: Antenna Condensed Bold,sans-serif;
   text-transform: uppercase;
 }
+
+/* ! ------------------------------------ MORE HTML STYLES ------------------------------------ */
 
 table {
   width: 100%!important;
@@ -3772,6 +3778,8 @@ form.luc-form input[type=checkbox], form.luc-form input[type=radio] {
   width: 18px;
 }
 
+/* ! ------------------------------------ HOME JUMBOTRON ------------------------------------ */
+
 .home-jumbotron .gr-cntrl .gr-cntrl-item-1 {
   flex-basis: 40%!important;
 }
@@ -3819,6 +3827,8 @@ input[type=text] {
   margin-top: .5rem!important;
   margin-bottom: 0!important;
 }
+
+/* ! ------------------------------------ FOOTER ------------------------------------ */
 
 .site-footer a {
   margin-top: 0;
@@ -3874,6 +3884,8 @@ input[type=text] {
   width: 100%;
   z-index: 9999;
 }
+
+/* ! ------------------------------------ gs ELEMENTS ------------------------------------ */
 
 .gs-heading {
   display: block;
@@ -4096,6 +4108,8 @@ input[type=text] {
   }
 }
 
+/* ! ------------------------------------ RANDOM THINGS ------------------------------------ */
+
 .h2 {
   font-family: "Antenna Cond Light", sans-serif;
 }
@@ -4103,6 +4117,8 @@ input[type=text] {
 .capitalize {
   text-transform: capitalize !important;
 }
+
+/* ! ------------------------------------ STORIES ------------------------------------ */
 
 .stories {
   padding: 1.25rem 0 2.5rem;
@@ -4185,6 +4201,8 @@ input[type=text] {
   color: var(--primary-color);
   text-decoration: underline!important;
 }
+
+/* ! ------------------------------------ PAGE CONTAINER ------------------------------------ */
 
 .page-container {
   padding: 1.25rem 0;
@@ -4300,6 +4318,8 @@ input[type=text] {
   color: var(--primary-color)!important;
 }
 
+/* ! ------------------------------------ BREADCRUMBS ------------------------------------ */
+
 .breadcrumbs {
   border-bottom: .0625rem solid #959595;
   margin: 0 2.1875rem .9375rem;
@@ -4377,6 +4397,8 @@ input[type=text] {
       display: inline-block
   }
 }
+
+/* ! ------------------------------------ WIDGET ------------------------------------ */
 
 .widget {
   margin-bottom: 2.5rem
@@ -4581,6 +4603,8 @@ input[type=text] {
   padding-top: 0
 }
 
+/* ! ------------------------------------CONTENT TEXT ------------------------------------ */
+
 @media screen and (max-width:35.9375rem) {
   .content-text .h1,
   .content-text .h2,
@@ -4629,6 +4653,8 @@ input[type=text] {
 .content-text .h2{
   margin-top: 3rem;
 }
+
+/* ! ------------------------------------ LISTS ------------------------------------ */
 
 .ol-style,
 .ol-stylized,
@@ -4726,9 +4752,13 @@ input[type=text] {
   width: 1.625rem
 }
 
+/* ! ------------------------------------ RANDOM ------------------------------------ */
+
 p strong, strong {
   font-family: "OpenSans Bold", sans-serif!important;
 }
+
+/* ! ------------------------------------ ACCORDION ------------------------------------ */
 
 .wf-accordion {
   background-color: #fff;
@@ -5006,6 +5036,8 @@ p strong, strong {
     border-bottom: none;
 }
 
+/* ! ------------------------------------ CONTENT BLOCKS ------------------------------------ */
+
 .gray-content-block {
   background: #eee;
   display: block;
@@ -5082,6 +5114,8 @@ p strong, strong {
     margin: 1rem
   }
 }
+
+/* ! ------------------------------------ ON THIS PAGE ------------------------------------ */
 
 .on-this-page {
   background: #eee;
@@ -5204,6 +5238,8 @@ p strong, strong {
     display: none
   }
 }
+
+/* ! ------------------------------------RANDOM ------------------------------------ */
 
 .marginallyBetter{
   margin: 1.75rem;
@@ -6011,6 +6047,8 @@ p strong, strong {
 .program-at-glance .btn {
   padding: .625rem 0
 }
+
+/* ! ------------------------------------ RANDOM ------------------------------------ */
 
 @media (min-width: 992px){
   .site-footer-top .gr12-col-lg-4 {
