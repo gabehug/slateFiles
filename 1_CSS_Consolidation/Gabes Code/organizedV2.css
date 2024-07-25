@@ -894,7 +894,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.uppercase h2,.uppercase h3,.uppercase h4,details summary,h5 {
+.uppercase h2,.uppercase h3,.uppercase h4,details summary {
   text-transform: uppercase!important;
 }
 
@@ -4637,7 +4637,8 @@ input[type=text] {
   border: 0;
   color: var(--primary-color) !important;
   margin: 0;
-  padding: 0
+  padding: 0;
+  font-weight: 700!important;
 }
 
 .story-program-card.program-card .btn-view-more {
@@ -6260,4 +6261,10 @@ input[type=text] {
 
 .overflow-hidden {
   overflow: hidden!important
+}
+
+.cost-dropdown {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; 
 }
