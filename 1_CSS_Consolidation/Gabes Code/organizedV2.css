@@ -574,7 +574,8 @@ p strong, strong {
 
 .h1.pg-title {
   padding-bottom: 3.125rem;
-  padding-top: 3.125rem
+  padding-top: 3.125rem;
+  line-height: normal;
 }
 
 @media screen and (min-width:64rem) {
@@ -1871,7 +1872,7 @@ form.luc-form form button {
 .content-text h5.antenna-cond-light,
 .content-text h6.antenna-cond-light,
 .content-text p.antenna-cond-light {
-  line-height: normal
+  line-height: normal;
 }
 
 @media screen and (max-width:35.9375rem) {
@@ -5859,6 +5860,11 @@ input[type=text] {
 
 .program-at-glance .btn {
   padding: .625rem 0
+}
+
+.pc .program-at-glance .select-css {
+  margin-bottom: 1rem;
+  width: 90%;
 }
 
 /* ! ------------------------------------ SITE FOOTER ------------------------------------ */
