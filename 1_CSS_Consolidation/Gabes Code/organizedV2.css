@@ -895,7 +895,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.uppercase h2,.uppercase h3,.uppercase h4,details summary,h5 {
+.uppercase h2,.uppercase h3,.uppercase h4,details summary {
   text-transform: uppercase!important;
 }
 
@@ -4206,6 +4206,12 @@ input[type=text] {
   transform: translateY(-20rem)
 }
 
+@media screen and (max-width: 768px) {
+  .find-program-dropdown{
+    margin-top: 0px!important;
+  }
+}
+
 @media screen and (max-width: 48rem) {
   .home-jumbotron .find-program-dropdown .luc-form {
       padding: 0 1.875rem;
@@ -4632,7 +4638,8 @@ input[type=text] {
   border: 0;
   color: var(--primary-color) !important;
   margin: 0;
-  padding: 0
+  padding: 0;
+  font-weight: 700!important;
 }
 
 .story-program-card.program-card .btn-view-more {
@@ -5226,7 +5233,7 @@ input[type=text] {
 }
 
 .gs-heading-inner-content {
-  align-content: flex-end;
+  align-content: center;
   display: flex;
   height: 100%
 }
@@ -5575,6 +5582,140 @@ input[type=text] {
 
 .widget-latest-category .latest-cat-news li:first-child a {
   padding-top: 0
+}
+
+/* ! ------------------------------------ CALENDAR CARD ------------------------------------ */
+
+.calendar-card {
+  display: block;
+  padding: 2.25rem 2.25rem 0
+}
+
+@media screen and (min-width:48rem) {
+  .calendar-card {
+      padding: 0 1.875rem 1.25rem 0
+  }
+}
+
+.calendar-card .calendar-card-date {
+  max-width: 3.75rem
+}
+
+.calendar-card .day,
+.calendar-card .month {
+  font-family: "Antenna Cond Bold", sans-serif;
+  font-size: .9375rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+  margin: 0;
+  padding: .3125rem 0;
+  text-align: center
+}
+
+.calendar-card .calendar-card-date-number {
+  background: #eee
+}
+
+.calendar-card .day {
+  font-size: 1.5rem;
+  line-height: 1.75rem
+}
+
+.calendar-card .time {
+  font-family: "Antenna Cond Light", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  margin: 0;
+  padding: 1rem 0 0;
+  text-transform: uppercase
+}
+
+.calendar-card .title {
+  font-family: "Antenna Cond Bold", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  margin: .3125rem 0 .8125rem
+}
+
+.calendar-card .title a {
+  text-decoration: none
+}
+
+.calendar-card .title a:hover {
+  text-decoration: underline
+}
+
+.calendar-card .description {
+  color: #222;
+  font-family: "OpenSans Regular", sans-serif!important
+}
+
+.calendar-card .description p {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5625rem
+}
+
+.calendar-card .cta {
+  font-family: "Antenna Cond Bold"!important;
+  position: relative;
+  text-decoration: none
+}
+
+.calendar-card .cta:hover {
+  text-decoration: underline
+}
+
+.calendar-card .cta:after {
+  content: "\f054";
+  font-family: Font Awesome\ 6 Free;
+  font-size: .6875rem;
+  padding-left: .375rem;
+  position: absolute;
+  top: -.0625rem
+}
+
+.calendar-card-date {
+  background: none;
+  border-radius: .25rem;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 1.25rem 0 0
+}
+
+.calendar-card-date h6 {
+  font-family: Antenna Condensed Light, sans-serif;
+  margin: 0;
+  text-align: center
+}
+
+.calendar-card-date h6 small {
+  font-size: 1rem
+}
+
+.calendar-card-date .calendar-card-date-day {
+  background: #8d0034;
+  border-radius: .25rem .25rem 0 0;
+  color: #eee;
+  padding: .25rem 0 .125rem;
+  text-transform: uppercase
+}
+
+.calendar-card-date .calendar-card-date-number {
+  background: #d5d5d5;
+  border-radius: 0 0 .25rem .25rem;
+  padding: .125rem 0
+}
+
+.calendar-card-content {
+  grid-column: 2;
+  grid-row: 1
+}
+
+.calendar-card-content>div>p {
+  margin: 0 0 .5rem!important;
+  margin-bottom: calc(var(--baseline)*.25*1rem)
 }
 
 /* ! ------------------------------------ ON THIS PAGE ------------------------------------ */
@@ -6126,4 +6267,10 @@ input[type=text] {
 
 .overflow-hidden {
   overflow: hidden!important
+}
+
+.cost-dropdown {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; 
 }

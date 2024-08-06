@@ -1,0 +1,71 @@
+<!-- ! This is the old setup for stylesheet linking in the main Header of GPEM Sites-->
+
+<link href="/website/assets/css/styles-documentation.css" rel="stylesheet" />
+<link href="/website/assets/css/styles-framework.css" rel="stylesheet" />
+<link href="/website/assets/css/styles-grid.css" rel="stylesheet" />
+<link href="/website/assets/css/styles-panels.css?v=20230509144712" rel="stylesheet" />
+<link href="/website/assets/css/styles-typography.css?v=20230816195812" rel="stylesheet" /><!-- App css -->
+<link href="/website/assets/css/grid.css" rel="stylesheet" />
+<link href="/website/assets/css/main.css?v=20230816195812" rel="stylesheet" />
+<link href="/website/assets/css/updates.css?v=220230816185812" rel="stylesheet" />
+<style type="text/css">
+  .vp-navbar, .vp-main-header {
+    overflow: visible;
+  }
+
+  .nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+    white-space: normal;
+    word-wrap: break-word;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none!important;
+  }
+
+  .nav-dropdown-menu .nav-dropdown-item {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+  }
+  
+  .nav-dropdown-menu .nav-dropdown-item:hover {
+    background-color: #ddd;
+  }
+  
+  .nav-dropdown-menu p {
+    margin: 0!important; 
+  }
+
+  .nav-item:hover .nav-dropdown-menu {
+    display: block;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .main-menu-wrap {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .mobile-dropdown-list {
+    list-style: none;
+    margin: 1rem 0 0 2rem;
+    padding: 0;
+  }
+  .mobile-dropdown-list li{
+    border-bottom: 0!important;
+    padding: 0!important;
+  }
+    
+</style>
