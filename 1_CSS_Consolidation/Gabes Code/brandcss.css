@@ -107,7 +107,7 @@
 .h4,
 .h5,
 .h6 {
-    color: #222;
+    color: var(--gray-extra-dark);
     font-family: "Antenna Cond Bold", sans-serif;
     font-weight: 700;
     text-transform: none;
@@ -847,7 +847,7 @@ a {
 }
 
 tr:nth-child(odd) {
-  background: var(--gray-light);
+  background: var(--gray-extra-light);
 }
 
 .center {
@@ -865,7 +865,7 @@ body {
 }
 
 ol,p,ul {
-  color: #2a2a2a;
+  color: var(--gray-extra-dark);
 }
 
 a,button,button a,button a:hover,button:hover {
@@ -971,8 +971,9 @@ a {
 
 p a {
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 900;
   text-decoration: none;
+  font-family: 'OpenSans Bold', sans-serif !important;
 }
 
 p a,p span.highlight.bg-danger,p span.highlight.bg-info,p span.highlight.bg-success,p span.highlight.bg-warning {
@@ -1061,7 +1062,7 @@ div.form_responses {
 div.form_responses select {
   display: block!important;
   background-size: .8rem .8rem!important;
-  border: 1px solid #222!important;
+  border: 1px solid var(--gray-extra-dark)!important;
   border-radius: .3125rem!important;
   font-size: .875rem!important;
   font-weight: 100!important;
@@ -1244,13 +1245,13 @@ form.luc-form p {
 form.luc-form .button,
 form.luc-form button {
     background: var(--secondary-color);
-    color: #222 !important;
+    color: var(--gray-extra-dark) !important;
     padding: .8rem 3rem
 }
 
 form.luc-form button.default:hover{
   background-color: var(--secondary-hover);
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
   }
 
 form.luc-form .select-css,
@@ -1259,7 +1260,7 @@ form.luc-form select,
 form.luc-form textarea {
     border: 1px solid #222;
     border-radius: 4px!important;
-    color: #222;
+    color: var(--gray-extra-dark);
     font-family: "OpenSans Regular", sans-serif;
     font-size: 14px;
     font-variation-settings: "wght" 300!important;
@@ -1386,14 +1387,14 @@ form.luc-form form button {
 
 .btn.btn-secondary {
   background: var(--secondary-color);
-  color: #222 !important
+  color: var(--gray-extra-dark) !important
 }
 
 .btn.btn-secondary.hover-show,
 .btn.btn-secondary:hover {
     background: var(--secondary-hover);
     border: none!important;
-    color: #222 !important
+    color: var(--gray-extra-dark) !important
 }
 
 .btn.btn-outline {
@@ -1422,14 +1423,14 @@ form.luc-form form button {
 .btn.btn-outline-secondary:hover {
     background-color: #fff;
     border: 1px solid #fff!important;
-    color: #222 !important
+    color: var(--gray-extra-dark) !important
 }
 
 .btn.inactive,
 .btn.inactive:hover {
     background-color: var(--gray-light);
     border: none!important;
-    color: #222 !important
+    color: var(--gray-extra-dark) !important
 }
 
 .btn.btn-cta {
@@ -1916,7 +1917,7 @@ form.luc-form form button {
 .ol-style,
 .ol-stylized,
 .ul-style {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-size: 1.125rem!important;
   font-variation-settings: "wght" 350!important;
   margin-left: 1.25rem;
@@ -1997,7 +1998,7 @@ form.luc-form form button {
 }
 
 .ol-stylized li:before {
-  background: #222;
+  background: var(--gray-extra-dark);
   border-radius: 100%;
   color: #fff !important;
   content: counter(item);
@@ -2013,7 +2014,7 @@ form.luc-form form button {
 
 .wf-accordion {
   background-color: #fff;
-  color: #0c1333;
+  color: #000;
   display: block
 }
 
@@ -2026,7 +2027,7 @@ form.luc-form form button {
 
 .wf-accordion .expand-all-btn {
   clear: both;
-  color: #222;
+  color: var(--gray-extra-dark);
   cursor: pointer;
   float: right;
   font-family: Arial, Helvetica, sans-serif;
@@ -2092,14 +2093,14 @@ form.luc-form form button {
 
 .wf-accordion .tabs-trigger:hover {
   border-bottom: none;
-  color: #222
+  color: var(--gray-extra-dark)
 }
 
 .wf-accordion .tabs-trigger.is-selected,
 .wf-accordion .tabs-trigger.is-selected:focus,
 .wf-accordion .tabs-trigger.is-selected:hover {
-  border-bottom: 2px solid #222;
-  color: #222
+  border-bottom: 2px solid var(--gray-extra-dark);
+  color: var(--gray-extra-dark)
 }
 
 .wf-accordion .tabs-trigger:active {
@@ -2113,11 +2114,11 @@ form.luc-form form button {
 }
 
 .wf-accordion .tabs-panel:not(:first-of-type) {
-  border-top: 2px solid #eee
+  border-top: 2px solid var(--gray-extra-light)
 }
 
 .wf-accordion .tabs-panel:not(:last-child) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--gray-extra-light);
   border-bottom: none
 }
 
@@ -2141,7 +2142,7 @@ form.luc-form form button {
 
 .wf-accordion .accordion-trigger {
   background: var(--gray-light);
-  color: #222;
+  color: var(--gray-extra-dark);
   cursor: pointer;
   display: block;
   font-family: "Antenna Cond Bold", sans-serif!important;
@@ -2269,17 +2270,17 @@ form.luc-form form button {
 
 .white-bg .wf-accordion .accordion-trigger{
   background: #fff;
-  color: #222;
+  color: var(--gray-extra-dark);
 }
 
 .white-bg .wf-accordion .accordion-trigger:hover{
   background: #fff;
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
 }
 
 .white-bg .wf-accordion .is-open .accordion-trigger, .white-bg .wf-accordion .is-open .accordion-trigger:hover{
   background: #fff !important;
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
 }
 
 .white-bg .wf-accordion .tabs-panel:not(:last-child){
@@ -2457,7 +2458,7 @@ form.luc-form form button {
 
 .card.card-gray-on-dark {
   background: var(--gray-light) !important;
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
   display: block;
   margin: .625rem;
   padding: 1.875rem
@@ -3337,6 +3338,10 @@ form.luc-form form button {
   margin: 0!important; 
 }
 
+.nav-dropdown-menu p a {
+  font-family: 'OpenSans Regular', sans-serif !important;
+ }
+
 .nav-item:hover .nav-dropdown-menu {
   display: block;
 }
@@ -3464,8 +3469,8 @@ form.luc-form form button {
 }
 
 .vp-main-header .site-name {
-  border-top: .0625rem dashed #222;
-  color: #222 !important;
+  border-top: .0625rem dashed var(--gray-extra-dark);
+  color: var(--gray-extra-dark) !important;
   font-family: "Antenna Cond Bold", sans-serif !important;
   font-size: 1rem;
   font-weight: 900;
@@ -3477,7 +3482,7 @@ form.luc-form form button {
 @media screen and (min-width:48.0625rem) {
   .vp-main-header .site-name {
       border: 0;
-      border-left: 0.0625rem dashed #222;
+      border-left: 0.0625rem dashed var(--gray-extra-dark);
       font-size: 1.5rem;
       max-width: unset;
       padding: 0 0 0 1.25rem;
@@ -3561,7 +3566,7 @@ form.luc-form form button {
 }
 
 .vp-main-header .vp-main-nav a {
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
   font-size: 1.125rem;
   font-weight: 900
 }
@@ -3678,7 +3683,7 @@ form.luc-form form button {
 }
 
 .hmbgr span {
-  background: #222;
+  background: var(--gray-extra-dark);
   border-radius: .9375rem;
   display: block;
   height: .25rem;
@@ -3738,7 +3743,7 @@ form.luc-form form button {
 }
 
 .vp-main-header .drop-menu {
-  background: var(--gray-light);
+  background: var(--gray-extra-light);
   display: grid;
   grid-template-areas: "top" "none" "bottom";
   grid-template-columns: 100%;
@@ -3786,7 +3791,7 @@ form.luc-form form button {
 }
 
 .vp-main-header .drop-menu .mobile-menu-top .vp-navbar-mobile a {
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
   font-family: "Antenna Cond Bold";
   font-size: 1.125rem;
   line-height: 1.25rem;
@@ -3827,7 +3832,7 @@ form.luc-form form button {
 }
 
 .vp-main-header .drop-menu .mobile-menu-bottom .info-for-mobile .info-for {
-  color: #222;
+  color: var(--gray-extra-dark);
   cursor: pointer;
   display: inline-block;
   font-family: "OpenSans Regular", sans-serif!important;
@@ -3926,7 +3931,7 @@ form.luc-form form button {
 }
 
 .home-jumbotron .find-program-title {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-family: "Antenna Cond Bold", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -4210,7 +4215,7 @@ input[type=text] {
 .find-program-dropdown {
   background: var(--gray-extra-light);
   box-shadow: 0 .1875rem .5rem rgba(0, 0, 0, .24);
-  color: #222;
+  color: var(--gray-extra-dark);
   display: block;
   font-family: "Antenna Cond Bold", sans-serif!important;
   left: 0;
@@ -4365,7 +4370,7 @@ input[type=text] {
 .search-component .search-btn {
   background: none;
   border: 0;
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
   cursor: pointer;
   margin: 0;
   position: absolute;
@@ -4421,7 +4426,7 @@ input[type=text] {
 }
 
 .story-program-card .body .description {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-size: 1.125rem;
   line-height: 1.625rem;
   padding: 1.25rem
@@ -4873,7 +4878,7 @@ input[type=text] {
 
 .program-listing-page .btn-filter {
   border: .0625rem solid #3c3c3c;
-  color: #222
+  color: var(--gray-extra-dark)
 }
 
 .program-listing-page .wf-accordion {
@@ -4884,7 +4889,7 @@ input[type=text] {
 .program-listing-page .wf-accordion .accordion-trigger:hover,
 .program-listing-page .wf-accordion .is-open {
   background: none!important;
-  color: #222!important
+  color: var(--gray-extra-dark)!important
 }
 
 .program-listing-page .wf-accordion .accordion-trigger, .filter-title {
@@ -5013,7 +5018,7 @@ input[type=text] {
 
 .by-the-numbers .action-point .desc {
   align-items: flex-start;
-  color: #222;
+  color: var(--gray-extra-dark);
   display: grid;
   font-family: "OpenSans Regular", sans-serif!important;
   font-size: 1.125rem;
@@ -5065,7 +5070,7 @@ input[type=text] {
 }
 
 .contact-details .description {
-  color: #222;
+  color: var(--gray-extra-dark);
   margin: .9375rem 0 0
 }
 
@@ -5102,7 +5107,7 @@ input[type=text] {
 }
 
 .stories .story {
-  color: #222;
+  color: var(--gray-extra-dark);
   overflow: hidden;
   padding: 0;
 }
@@ -5116,7 +5121,7 @@ input[type=text] {
 }
 
 .stories .story .date {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-family: "Antenna Cond Light";
   font-size: 1rem;
   line-height: 1.25rem;
@@ -5125,7 +5130,7 @@ input[type=text] {
 }
 
 .stories .story .caption {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-family: "Antenna Cond Bold";
   font-weight: 700;
 }
@@ -5164,7 +5169,7 @@ input[type=text] {
 
 .stories a {
   background-image: none!important;
-  color: #222;
+  color: var(--gray-extra-dark);
   font-size: 1.2rem;
   line-height: 1.5625rem;
   font-family: "Antenna Cond Bold", sans-serif!important;
@@ -5409,7 +5414,7 @@ input[type=text] {
 }
 
 .widget-title {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-family: "Antenna Cond Bold", sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
@@ -5487,12 +5492,12 @@ input[type=text] {
 
 .widget.widget-in-this-section .link:hover {
   background: var(--gray-light);
-  color: #222;
+  color: var(--gray-extra-dark);
   text-decoration: underline
 }
 
 .widget-card {
-  background: #eee
+  background: var(--gray-extra-light)
 }
 
 @media screen and (max-width:575px) {
@@ -5532,7 +5537,7 @@ input[type=text] {
 }
 
 .widget-card .widget-card-list li a {
-  color: #222 !important;
+  color: var(--gray-extra-dark) !important;
   font-family: "Antenna Cond Light", sans-serif;
   text-decoration: none;
   text-transform: uppercase
@@ -5544,7 +5549,7 @@ input[type=text] {
 }
 
 .widget-card .widget-contact-info {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-size: 16px!important;
   margin-bottom: 20px
 }
@@ -5578,7 +5583,7 @@ input[type=text] {
 }
 
 .widget-latest-category .latest-cat-news {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-family: "Antenna Cond Bold", sans-serif;
   font-size: 16px;
   font-weight: 100;
@@ -5591,7 +5596,7 @@ input[type=text] {
 }
 
 .widget-latest-category .latest-cat-news li a {
-  color: #222;
+  color: var(--gray-extra-dark);
   display: block;
   line-height: 24px;
   padding: 20px 0;
@@ -5669,7 +5674,7 @@ input[type=text] {
 }
 
 .calendar-card .description {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-family: "OpenSans Regular", sans-serif!important
 }
 
@@ -5839,7 +5844,7 @@ input[type=text] {
 }
 
 .on-this-page .mobile-title:after {
-  color: #222;
+  color: var(--gray-extra-dark);
   content: "\f0c9";
   font-family: Font Awesome\ 6 Free;
   font-size: 1.2rem;
@@ -5997,7 +6002,7 @@ input[type=text] {
 
 .program-at-glance .contact-title,
 .program-at-glance .sub-title {
-  color: #222;
+  color: var(--gray-extra-dark);
   font-family: "Antenna Cond Bold", sans-serif;
   font-size: 1rem;
   line-height: 1.25rem
@@ -6078,7 +6083,7 @@ input[type=text] {
 }
 
 .site-footer-top {
-  background: #222;
+  background: var(--gray-extra-dark);
   border-top: .3125rem solid var(--primary-color);
   color: #fff;
   padding: 3.125rem 1.25rem
