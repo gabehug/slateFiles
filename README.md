@@ -1,17 +1,15 @@
 # Code Snippets and workspace for LUC Web Designer Position
-This is the repository that I am using to develop and store project code for my position at Loyola University Chicago. </br>
-*Projects will only make it here if they are code intensive.* The structure of this repo **will change over time!**
+This is the repository that I am using to develop and store project code for my position as the Web Developer at Loyola University Chicago. </br>
+*Projects will only make it here if they are code intensive.*
 
 ---
 
 ## 1. CSS Consolidation Project
 
-I am currently working to consolidate 7 different CSS sheets that are styling the GPEM website. These files were provided by an external vendor and there are thousands of lines of unused code that I am removing. 
+The goal of this project is to consolidate the existing 7 style sheets down to a single sheet for the GPEM Website. This is being done to reduce the load times for the GPEM webpages in 2 ways: 
 
-### Project Goals
-- Reduce load time 
-- Reduce amount of code sent to website 
-- Send as few CSS sheets as possible to the site
+  a. Reducing the amount of code being sent client side every time the page is loaded  
+  b. Eliminating cumulative layout shift from overriding styles multiple times  
 
 ## 2. HTML 
 
@@ -24,6 +22,10 @@ This is the code for the new FAQ section being added to the GPEM Website with Fr
 ## 4. EOP Consolidation 
 
 Code for the consolidation of Enrollment Advisor appointment portals to the main GPEM Appointment Portals. 
+
+## 5. Build Updates
+
+This folder holds the Original Build Files before brand updates were made and the files with the new brand updates/style updates applied. The changes are largely to update brand colors being used for all portals/events/forms using the Default Branding (which is what the build files are used for) but also include a new header with dropdowns to better match the website_headernav content block being used for other portals. 
 
 ---
 
