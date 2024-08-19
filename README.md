@@ -26,7 +26,11 @@ Code for the consolidation of Enrollment Advisor appointment portals to the main
 
 ## 5. Build Updates
 
-This folder holds the Original Build Files before brand updates were made and the files with the new brand updates/style updates applied. The changes are largely to update brand colors being used for all portals/events/forms using the Default Branding (which is what the build files are used for) but also include a new header with dropdowns to better match the website_headernav content block being used for other portals. 
+This folder holds the Original Build Files before brand updates were made and the files with the new brand updates/style updates applied. 
+
+The changes are largely to update brand colors being used for all portals/events/forms using the Default Branding (which is what the build files are used for) but also include a new header with dropdowns to better match the website_headernav content block being used for other portals. 
+
+The build-header.css is a new file that holds teh styling for the new header for everything using default branding. You cant connect the brand.css consolidated stylesheet because there are far too many conflicting styles and things that just dont work because of the setup of Slate. 
 
 ---
 
