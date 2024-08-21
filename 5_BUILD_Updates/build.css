@@ -41,13 +41,12 @@ a:hover, a:active {
 }
 a, a:link, a:visited {
 	color: var(--primary-color);
-	text-decoration: underline;
   font-weight: 700;
 	cursor: pointer;
 }
 a:hover, a:focus {
 	color: var(--primary-hover);
-	text-decoration: none;
+	text-decoration: underline;
 }
 ul.action a.default, button.default, button, .button, .buttonHigh{
 	background-color: var(--primary-color);
@@ -58,6 +57,9 @@ ul.action a.default, button.default, button, .button, .buttonHigh{
 	transition: 0.3s;
 	font-family: "Antenna Cond Bold", sans-serif !important;
 	font-size: 16px;
+}
+#c_header-span a {
+  text-decoration: none!important;
 }
 .buttonHigh{
 color: #ffffff !important;
@@ -137,7 +139,7 @@ article div#menu ul li a.selected{
 article div#menu ul li a{
 	border-left: 8px var(--gray-light) solid;
 	color: var(--primary-color);
-	text-decoration: none;
+	text-decoration: none!important;
 	padding: 10px;
 	font-weight: bold;
 }
